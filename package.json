@@ -1,6 +1,7 @@
 {
     "name": "js-movie-review",
     "version": "1.0.0",
+    "homepage": "https://chanw9503.github.io/js-movie-review/",
     "description": "영화 리뷰 홈페이지 만들기",
     "main": "index.js",
     "scripts": {
@@ -9,7 +10,8 @@
         "build": "webpack --config webpack.config.js",
         "cypress": "cypress open",
         "format": "prettier --check --ignore-path .gitignore .",
-        "format:fix": "prettier --write --ignore-path .gitignore ."
+        "format:fix": "prettier --write --ignore-path .gitignore .",
+        "deploy": "npm run build && gh-pages -d dist"
     },
     "repository": {
         "type": "git",
@@ -24,7 +26,6 @@
     "bugs": {
         "url": "https://github.com/next-step/js-movie-review/issues"
     },
-    "homepage": "https://github.com/next-step/js-movie-review#readme",
     "devDependencies": {
         "@eslint/js": "^9.3.0",
         "css-loader": "^7.1.2",
